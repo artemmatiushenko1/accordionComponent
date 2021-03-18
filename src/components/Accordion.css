@@ -1,15 +1,30 @@
 .Accordion {
     position: relative;
     height: 100%;
-    max-width: 350px;
+    width: 300px;
 }
 
 .question {
-    font-size: 17px;
+    font-size: 12px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.arrow-btn {
+    color: #f87958;
 }
 
 .answer {
     font-size: 12px;
     color: hsl(237, 12%, 33%);
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.accordion-element {
+    margin-bottom: 15px;
 }

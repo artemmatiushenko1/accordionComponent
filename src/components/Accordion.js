@@ -8,8 +8,11 @@ function Accordion() {
             <div className="wrapper-accordion">
                 {Data.map((item, index) => {
                     return (
-                        <div>
-                            <h1 className="question">{item.question}</h1>
+                        <div className="accordion-element">
+                            <h1 className="question">
+                                {item.question}{' '}
+                                <FaAngleDown className="arrow-btn"></FaAngleDown>
+                            </h1>
                             <p className="answer">{item.answer}</p>
                         </div>
                     );

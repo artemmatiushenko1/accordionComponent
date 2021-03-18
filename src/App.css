@@ -52,4 +52,5 @@ body {
 .accordion-block-headline {
     text-transform: uppercase;
     margin-bottom: 45px;
+    color: #1e1e36;
 }
