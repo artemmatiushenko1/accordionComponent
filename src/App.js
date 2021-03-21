@@ -8,7 +8,11 @@ function App() {
         <div className="App">
             <div className="card">
                 <div className="image-block">
-                    <img class="box-img-element" src={boxIllustration}></img>
+                    <img
+                        class="box-img-element"
+                        src={boxIllustration}
+                        alt="box-img"
+                    ></img>
                 </div>
                 <div className="accordion-block">
                     <h1 className="accordion-block-headline">faq</h1>

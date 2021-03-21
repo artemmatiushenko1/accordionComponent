@@ -19,7 +19,14 @@ function Accordion() {
             <div className="wrapper-accordion">
                 {Data.map((item, index) => {
                     return (
-                        <div className="accordion-element">
+                        <div
+                            className={
+                                'accordion-element' +
+                                (clicked === index
+                                    ? ' open-accordion-element'
+                                    : '')
+                            }
+                        >
                             <h1
                                 className={
                                     'question ' +
@@ -37,11 +44,14 @@ function Accordion() {
                                     )}
                                 </span>
                             </h1>
-                            {clicked === index ? (
-                                <p className={'answer'}>{item.answer}</p>
-                            ) : (
-                                ''
-                            )}
+                            <p
+                                className={
+                                    'answer' +
+                                    (clicked === index ? ' open-answer' : '')
+                                }
+                            >
+                                {item.answer}
+                            </p>
                         </div>
                     );
                 })}
