@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaAngleDown, FaAngleUp } from 'react-icons/fa';
+import { FaAngleDown } from 'react-icons/fa';
 import { Data } from './Data';
 import './Accordion.css';
 
@@ -37,11 +37,14 @@ function Accordion() {
                             >
                                 {item.question}
                                 <span>
-                                    {clicked === index ? (
-                                        <FaAngleUp className="arrow-btn"></FaAngleUp>
-                                    ) : (
-                                        <FaAngleDown className="arrow-btn"></FaAngleDown>
-                                    )}
+                                    <FaAngleDown
+                                        className={
+                                            'arrow-btn' +
+                                            (clicked === index
+                                                ? ' arrow-btn-active'
+                                                : '')
+                                        }
+                                    ></FaAngleDown>
                                 </span>
                             </h1>
                             <p
