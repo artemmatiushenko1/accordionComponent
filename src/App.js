@@ -9,7 +9,7 @@ function App() {
             <div className="card">
                 <div className="image-block">
                     <img
-                        class="box-img-element"
+                        className="box-img-element"
                         src={boxIllustration}
                         alt="box-img"
                     ></img>

@@ -8,11 +8,13 @@ function Accordion() {
 
     const toogle = (index) => {
         if (clicked === index) {
-            return setClicked(null);
+            return setClicked(false);
         }
 
         setClicked(index);
     };
+
+    console.log({ clicked, setClicked });
 
     return (
         <div className="Accordion">
